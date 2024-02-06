@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  padding: 20px;
+}
+
+#header {
+  width: 500px;
+  box-shadow: 0px 0px 10px 2px #ccc;
+  padding: 20px;
+  border-radius: 4px 4px 0 0;
+}
+h2 {
+  text-align: center;
+  color: #444;
+}
+input {
+  width: 70%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background: #ccc;
+}
+input::placeholder {
+  font-size: 13px;
+}
+button {
+  border: none;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+button[type="submit"] {
+  background: rgb(35, 216, 28);
+}
+button[type="button"] {
+  background: rgb(172, 34, 34);
+}
+ul#lists {
+  list-style-type: none;
+  padding-left: 8px;
+}
+
+ul#lists li {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-left: 5px solid #ccc;
+  transition: all 0.7s ease-in-out;
+}
+
+ul#lists li:hover {
+  border-color: rgb(45, 138, 42);
+}
+ul#lists li .delete,
+.done {
+  cursor: pointer;
+  color: #fff;
+  padding: 4px;
+}
+ul#lists li .delete {
+  background: red;
+}
+
+ul#lists li .done {
+  background: green;
+  margin-right: 7px;
+}
